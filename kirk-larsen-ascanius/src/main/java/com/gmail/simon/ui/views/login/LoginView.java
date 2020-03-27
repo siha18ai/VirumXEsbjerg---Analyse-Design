@@ -24,7 +24,7 @@ public class LoginView extends LoginOverlay
 	public LoginView() {
 		LoginI18n i18n = LoginI18n.createDefault();
 		i18n.setHeader(new LoginI18n.Header());
-		i18n.getHeader().setTitle("Kirk Larsen & Ascanius");
+		i18n.getHeader().setTitle("Hej Esbjerg & Ascanius");
 		i18n.getHeader().setDescription(
 			"admin@vaadin.com + admin\n" + "barista@vaadin.com + barista");
 		i18n.setAdditionalInformation(null);
