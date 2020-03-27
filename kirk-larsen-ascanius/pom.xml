@@ -39,6 +39,8 @@
         <node.version>v8.16.0</node.version>
         <yarn.version>v1.16.0</yarn.version>
         <buildtools.directory>build-tools</buildtools.directory>
+
+        <spring.version>2.2.1.RELEASE</spring.version>
     </properties>
 
     <repositories>
@@ -126,6 +128,12 @@
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+            <scope>runtime</scope>
         </dependency>
 
         <!-- Vaadin -->
@@ -280,6 +288,10 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring.version}</version>
+                <configuration>
+                    <fork>true</fork>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>com.vaadin</groupId>

@@ -75,10 +75,7 @@ public class DashboardView extends PolymerTemplate<TemplateModel> {
 	@Id("deliveriesThisYear")
 	private Chart deliveriesThisYearChart;
 
-	@Id("yearlySalesGraph")
-	private Chart yearlySalesGraph;
-
-	@Id("ordersGrid")
+    @Id("ordersGrid")
 	private Grid<Order> grid;
 
 	@Id("monthlyProductSplit")
@@ -86,8 +83,10 @@ public class DashboardView extends PolymerTemplate<TemplateModel> {
 
 	@Id("todayCountChart")
 	private Chart todayCountChart;
+    @Id("yearlySalesGraph")
+    private Chart yearlySalesGraph;
 
-	@Autowired
+    @Autowired
 	public DashboardView(OrderService orderService, OrdersGridDataProvider orderDataProvider) {
 		this.orderService = orderService;
 
