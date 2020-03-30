@@ -32,3 +32,4 @@ webdriver/
 node_modules
 webpack.generated.js
 
+/node_modules
